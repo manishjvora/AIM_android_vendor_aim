@@ -7,3 +7,8 @@ done < vendor/aim/devices/device_userdebug.list
 while read device; do
   add_lunch_combo aim_$device-user
 done < vendor/aim/devices/device_user.list
+
+# devices built with user build type
+while read device; do
+  add_lunch_combo aim_$device-eng
+done < vendor/aim/devices/device_eng.list
